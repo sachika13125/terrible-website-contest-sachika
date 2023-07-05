@@ -11,7 +11,9 @@ html{
 }
 
 body {
-    background-color: var(--primaly-color);
+    background-image: url(../../imgs/pizza-4.jpg);
+    background-size: cover;
+    object-fit: cover;
 }
 
 h1 {
@@ -88,7 +90,7 @@ input[type="checkbox"] {
     cursor: pointer;
     width: 50px;
     height: 50px;
-    opacity: 0.1;
+    opacity: 0.04;
     position: absolute;
     top: 300px;
     right: 100px;
@@ -98,7 +100,7 @@ input[type="checkbox"] {
     display: block;
     font-size: 3em;
     width: max-content;
-    margin: 100px auto;
+    margin: 150px auto;
 }
 
 input:checked ~ .first-message {
@@ -190,8 +192,8 @@ input[type="button"] {
 }
 
 .order-container img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -203,7 +205,7 @@ input[type="button"] {
     width: max-content;
     margin: 0 auto;
     padding: .5em;
-    border: 2em solid #2c1a9e;
+    border: 2em solid var(--secondary-color);
 }
 
 input[type="text"],
