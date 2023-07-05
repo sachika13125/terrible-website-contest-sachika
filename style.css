@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    --primaly-color: #545454;
+    --secondary-color: #2c1a9e;
+}
+
+body {
+    background-color: var(--primaly-color);
+}
+
+h1 {
+    font-size: 3em;
+    color: var(--secondary-color);
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--secondary-color);
+}
+
+h3 {
+    font-size: 1.5em;
+    color: var(--secondary-color);
+}
+
+p {
+    font-size: 1em;
+}
+
+/* Index */
+body {
+    position: relative;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0.1;
+    position: absolute;
+    top: 300px;
+    right: 100px;
+}
+
+.first-message {
+    display: block;
+    font-size: 3em;
+    width: max-content;
+    margin: 100px auto;
+}
+
+input:checked ~ .first-message {
+    display: none;
+}
+
+.home-page {
+    display: none;
+    width: 60%;
+    margin: 0 auto;
+}
+
+input:checked ~ .home-page {
+    display:block
+}
+
+.about {
+    display: block;
+    text-align: left;
+}
+
+#home-menu img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    opacity: 0.6;
+    position: relative;
+}
+
+.menu-p {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+}
+
+input[type="button"] {
+    width: max-content;
+    padding: .5em;
+    margin: .5em;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+/* Menu */
+.menu-page-container {
+    display: flex;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.menu-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+
+    transform: rotate(60deg);
+}
+
+.menu-item img:hover {
+    transform: rotate(300deg);
+
+}
+
+.menu-item p {
+    color: var(--primaly-color);
+}
+
+.menu-item p:hover {
+    color: var(--secondary-color);
+}
+
+/* Order */
+.flexbox {
+    display: flex;
+    margin: 10px auto;
+}
+
+.order-container {
+    display: block;
+}
+
+.order-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.price {
+    font-size: 1em;
+}
+
+.customer-info {
+    width: max-content;
+    margin: 0 auto;
+    padding: .5em;
+    border: 2em solid #2c1a9e;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: .5em .5em;
+}
+
+input[type="submit"] {
+    padding: .5em .5em;
+    background-color: var(--primaly-color);
+    color: var(--secondary-color);
+    border: none;
+}
+
+input[type="reset"] {
+    padding: 1em 1em;
+    background-color: red;
+    font-size: 1em;
+    color: var(--secondary-color);
+    border: none;
+    margin-left: 24em;
+}
